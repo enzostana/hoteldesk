@@ -1,0 +1,7 @@
+# Copie este modelo para sua configuração local e substitua o ID/caminho.
+tunnel: TUNNEL_ID
+credentials-file: /caminho/absoluto/.cloudflared/TUNNEL_ID.json
+ingress:
+  - hostname: hotel.enzostana.space
+    service: http://127.0.0.1:3017
+  - service: http_status:404
